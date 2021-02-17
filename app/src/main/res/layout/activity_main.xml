@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rentHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Shome"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/rentHome"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageDashBoard"/>
+
+    <Button
+        android:id="@+id/btnListRumah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List Rumah"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageDashBoard"/>
+
+    <Button
+        android:id="@+id/btnPeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Peta"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnListRumah"/>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Exit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnPeta"/>
+
+</RelativeLayout>
